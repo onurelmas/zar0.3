@@ -29,7 +29,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.2
+version = 0.3
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -44,7 +44,9 @@ requirements = python3,kivy
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-# presplash.filename = %(source.dir)s/data/splash.png
+presplash.filename = %(source.dir)s/data/icon.png
+fullscreen = 0
+presplash.color = #EDEDED
 
 # (str) Icon of the application
 icon.filename = %(source.dir)s/data/icon.png
@@ -53,17 +55,6 @@ icon.filename = %(source.dir)s/data/icon.png
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
 orientation = portrait
 
-# (str) Path to a keystore file
-android.keystore = "zar.keystore"
-
-# (str) Key store alias
-android.keystore_alias = "zaranahtari"
-
-# (str) Key store password
-android.keystore_pass = "qwerty"
-
-# (str) Key alias password
-android.key_alias_pass = "qwerty"
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
